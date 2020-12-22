@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+
+    <form action="https://httpbin.org/post" method="POST">
+
+        <input type="hidden" value="s-250" name="product"/>
+
+        <div class="form-row">
+            <label for="adi">Adı</label>
+            <input name="adi" id="adi" type="text" required placeholder="Mehmet Sait">  
+        </div>   
+        
+        <div class="form-row">
+            <label for="tel">Telefonu</label>
+            <input name="tel" id="tel" type="tel" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required>
+        </div>
+        
+        <div class="form-row">
+            <label for="mesaj">Mesaj</label>
+            <textarea name="mesaj" id="mesaj" cols="50" type="UTF-8" rows="3"></textarea>
+        </div>
+        
+        <div class="form-row">
+            <label for="sehir">Şehir</label>
+            <select name="sehir" id="sehir">
+              <option value="34">İstanbul</option>
+              <option value="35" selected>İzmir</option>
+            </select>
+          </div>
+
+        <div class="form-row">
+
+        <div class="radio-container">
+            <p>Sevdiğiniz Renk </p>
+            <label><input name="renk" type="radio" checked/>Siyah</label>
+            <label><input name="renk" type="radio"/>Beyaz</label>
+        </div>
+        </div>
+        
+        <div class="butons">
+            <button type="reset">Sıfırla</button>
+            <button type="submit">Gönder</button>
+        </div>
+        
+        
+    </form>
+
+
+
+
+
+</body>
+</html>
